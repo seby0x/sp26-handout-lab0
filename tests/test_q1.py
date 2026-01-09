@@ -12,3 +12,14 @@ result: str = add(3, 'hi')
 
 def func() -> int:
     pass
+
+
+#under here is my test for the function
+
+class tester(unittest.TestCase):
+    "tests the palindrome function"
+
+    def test_is_palindrome(self) -> None:
+        """tests for palindrome function"""
+        self.assertTrue("racecar")
+        self.assertFalse("spaghetti")

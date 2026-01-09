@@ -2,7 +2,8 @@
 Please implement the stub function to match the documentation.
 Make sure to implement tests in the tests directory.
 """
-
+import pandas
+import unittest
 
 def is_palindrome(s: str) -> bool:
 
@@ -20,3 +21,4 @@ def is_palindrome(s: str) -> bool:
         left += 1
         right -= -1
     return True
+
