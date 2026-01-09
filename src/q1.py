@@ -5,15 +5,18 @@ Make sure to implement tests in the tests directory.
 
 
 def is_palindrome(s: str) -> bool:
-    """
-    Check if the given string is a palindrome.
 
-    A palindrome is a string that reads the same forwards and backwards,
-    ignoring case and non-alphanumeric characters.
+    none = ""
+    for char in s:
+        if char.isalnum():
+            none += char.lower()
 
-    Args:
-        s (str): The string to check.
-    Returns:
-        bool: True if the string is a palindrome, False otherwise.
-    """
+    left = 0
+    right = len(none) - 1
+
+    while left < right:
+        if none[left] != none[right]:
+            return False
+        left += 1
+        right -= -1
     return True
