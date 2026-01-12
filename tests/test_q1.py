@@ -23,3 +23,4 @@ class tester(unittest.TestCase):
         """tests for palindrome function"""
         self.assertTrue("racecar")
         self.assertFalse("spaghetti")
+        self.assertTrue("madam")

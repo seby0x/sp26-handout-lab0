@@ -22,3 +22,4 @@ def is_palindrome(s: str) -> bool:
         right -= -1
     return True
 
+
